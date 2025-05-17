@@ -1,5 +1,5 @@
 <resources>
-    <style name="Theme.Economias" parent="Theme.MaterialComponents.Light.DarkActionBar">
+    <style name="Theme.Economias" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
         <item name="colorOnPrimary">@color/backgroundColor</item>
@@ -7,6 +7,6 @@
         <item name="android:windowBackground">@color/backgroundColor</item>
         <item name="android:textColor">@color/textColor</item>
         <item name="android:statusBarColor">@color/colorPrimaryDark</item>
-        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 </resources>
