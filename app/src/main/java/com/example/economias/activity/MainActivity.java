@@ -236,5 +236,7 @@ public class MainActivity extends AppCompatActivity {
         editValor.setText("");
         spinnerCategoria.setSelection(0);
         editData.setText("");
+
+        Toasty.success(this, "Despesa adicionada com sucesso!", Toast.LENGTH_SHORT).show();
     }
 }
