@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".activity.MainActivity">
 
-
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/main"
         android:layout_width="match_parent"
@@ -19,8 +18,9 @@
             android:id="@+id/spinnerCategoria"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:layout_marginBottom="8dp"
-            android:padding="4dp"/>
+            android:padding="4dp" />
 
         <EditText
             android:id="@+id/editNomeItem"
