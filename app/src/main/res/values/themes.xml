@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <style name="Theme.Economias" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
@@ -6,7 +6,7 @@
         <item name="colorSecondary">@color/colorAccent</item>
         <item name="android:windowBackground">@color/backgroundColor</item>
         <item name="android:textColor">@color/textColor</item>
-        <item name="android:statusBarColor">#00FF00</item>
-        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowLightStatusBar">false</item>
     </style>
 </resources>
