@@ -83,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
                 "🍽️ Comer Fora",
                 "💊 Medicamentos",
                 "📈 Impostos",
+                "🐶 Pets",
                 "👕 Roupas",
                 "👟 Calçados",
                 "🛍️ Compras Online",
