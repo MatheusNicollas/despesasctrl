@@ -16,7 +16,7 @@
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="@color/textColor"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -92,8 +92,8 @@
             android:id="@+id/btnResumo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="📊 Ver Resumo por Categoria"
-            android:layout_marginTop="8dp"/>
+            android:layout_marginTop="8dp"
+            android:text="📊 Ver Resumo por Categoria" />
 
     </LinearLayout>
 

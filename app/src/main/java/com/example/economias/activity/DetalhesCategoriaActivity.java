@@ -27,6 +27,7 @@ public class DetalhesCategoriaActivity extends AppCompatActivity {
     private String categoriaAtual;
     private String dataInicio;
     private String dataFim;
+    private TextView btnVoltar;
 
 
     @Override
@@ -45,15 +46,15 @@ public class DetalhesCategoriaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalhes_categoria);
 
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("Categoria");
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setDisplayShowHomeEnabled(true);
-        }
-
         textCategoria = findViewById(R.id.textCategoria);
         listViewDetalhes = findViewById(R.id.listViewDetalhes);
         textTotal = findViewById(R.id.textTotal);
+        btnVoltar = findViewById(R.id.btnVoltar);
+
+        btnVoltar.setOnClickListener(v -> {
+            finish();
+        });
+
         dbHelper = new DatabaseHelper(this);
 
         Intent intent = getIntent();
@@ -76,7 +77,7 @@ public class DetalhesCategoriaActivity extends AppCompatActivity {
         tempCalendario.set(Calendar.YEAR, ano);
 
         String nomeMes = new SimpleDateFormat("MMMM", Locale.getDefault()).format(tempCalendario.getTime());
-        String tituloResumo = String.format("Gastos com %s em %s de %04d", categoria, nomeMes, ano);
+        String tituloResumo = String.format("%s em %s de %04d", categoria, nomeMes, ano);
 
         textCategoria.setText(tituloResumo);
     }

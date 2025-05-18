@@ -50,6 +50,7 @@ public class ResumoActivity extends AppCompatActivity {
     private Button btnFiltrar;
     private List<Despesa> listaDespesas;
     private TextView textResumo;
+    private TextView btnVoltar;
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -65,12 +66,7 @@ public class ResumoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resumo);
 
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("Resumo das Despesas");
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setDisplayShowHomeEnabled(true);
-        }
-
+        btnVoltar = findViewById(R.id.btnVoltar);
         editDataInicio = findViewById(R.id.editDataInicio);
         editDataFim = findViewById(R.id.editDataFim);
         btnFiltrar = findViewById(R.id.btnFiltrar);
@@ -78,6 +74,10 @@ public class ResumoActivity extends AppCompatActivity {
         pieChart = findViewById(R.id.pieChart);
         textTotalGeral = findViewById(R.id.textTotalGeral);
         textResumo = findViewById(R.id.textResumo);
+
+        btnVoltar.setOnClickListener(v -> {
+            finish();
+        });
 
         settarValoresPadraoParaDatas();
         setupDatePicker(editDataInicio);
