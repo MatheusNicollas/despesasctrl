@@ -84,18 +84,21 @@ public class MainActivity extends AppCompatActivity {
                 "💊 Medicamentos",
                 "📈 Impostos",
                 "🐶 Pets",
-                "👕 Roupas",
-                "👟 Calçados",
-                "🛍️ Compras Online",
+                "🛍️ Compras",
                 "✈️ Viagem",
-                "💻 Tecnologia",
+                "🏥 Saúde",
                 "🎁 Presente",
                 "🚗 Carro",
                 "⛽ Combustível",
                 "🚌 Transporte",
                 "🎬 Entretenimento",
+                "📚 Educação",
                 "🛡️ Seguro",
-                "🏖️ Lazer"
+                "🏖️ Lazer",
+                "🏠 Casa",
+                "💧 Conta de água",
+                "🔌 Conta de Energia",
+                "🛜 Internet"
         ));
 
         ArrayAdapter<String> spinnerAdapter = new ArrayAdapter<>(this,
