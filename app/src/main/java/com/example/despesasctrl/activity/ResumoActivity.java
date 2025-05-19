@@ -1,4 +1,4 @@
-package com.example.economias.activity;
+package com.example.despesasctrl.activity;
 
 import static android.text.TextUtils.isEmpty;
 
@@ -18,11 +18,11 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.economias.R;
-import com.example.economias.data.DatabaseHelper;
-import com.example.economias.data.Despesa;
-import com.example.economias.hashmap.DespesasPorCategoria;
-import com.example.economias.hashmap.GraficoDespesas;
+import com.example.despesasctrl.R;
+import com.example.despesasctrl.data.DatabaseHelper;
+import com.example.despesasctrl.data.Despesa;
+import com.example.despesasctrl.hashmap.DespesasPorCategoria;
+import com.example.despesasctrl.hashmap.GraficoDespesas;
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;

@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.economias"
+    namespace = "com.example.despesasctrl"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.economias"
+        applicationId = "com.example.despesasctrl"
         minSdk = 29
         targetSdk = 35
         versionCode = 1

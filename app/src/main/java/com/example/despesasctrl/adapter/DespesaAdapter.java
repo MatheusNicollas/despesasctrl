@@ -1,4 +1,4 @@
-package com.example.economias.adapter;
+package com.example.despesasctrl.adapter;
 
 import static android.app.Activity.RESULT_OK;
 
@@ -15,12 +15,12 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
-import com.example.economias.activity.DetalhesCategoriaActivity;
-import com.example.economias.activity.MainActivity;
-import com.example.economias.R;
-import com.example.economias.utils.Utils;
-import com.example.economias.data.DatabaseHelper;
-import com.example.economias.data.Despesa;
+import com.example.despesasctrl.activity.DetalhesCategoriaActivity;
+import com.example.despesasctrl.activity.MainActivity;
+import com.example.despesasctrl.R;
+import com.example.despesasctrl.utils.Utils;
+import com.example.despesasctrl.data.DatabaseHelper;
+import com.example.despesasctrl.data.Despesa;
 
 import java.text.NumberFormat;
 import java.util.List;

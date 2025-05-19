@@ -1,4 +1,4 @@
-package com.example.economias;
+package com.example.despesasctrl;
 
 import org.junit.Test;
 

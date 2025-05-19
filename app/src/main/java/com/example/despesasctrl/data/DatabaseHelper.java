@@ -1,4 +1,4 @@
-package com.example.economias.data;
+package com.example.despesasctrl.data;
 
 import android.content.ContentValues;
 import android.content.Context;

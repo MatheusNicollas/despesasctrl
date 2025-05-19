@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.economias">
+    package="com.example.despesasctrl">
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,7 @@
         android:theme="@style/Theme.Economias">
 
         <activity
-            android:name=".activity.MainActivity"
+            android:name="com.example.despesasctrl.activity.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.Economias">
             <intent-filter>
@@ -21,10 +21,10 @@
         </activity>
 
         <activity
-            android:name=".activity.ResumoActivity"
+            android:name="com.example.despesasctrl.activity.ResumoActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.DetalhesCategoriaActivity"
+            android:name="com.example.despesasctrl.activity.DetalhesCategoriaActivity"
             android:exported="false" />
 
     </application>

@@ -1,4 +1,4 @@
-package com.example.economias.activity;
+package com.example.despesasctrl.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,10 +8,10 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.economias.R;
-import com.example.economias.adapter.DespesaAdapter;
-import com.example.economias.data.DatabaseHelper;
-import com.example.economias.data.Despesa;
+import com.example.despesasctrl.R;
+import com.example.despesasctrl.adapter.DespesaAdapter;
+import com.example.despesasctrl.data.DatabaseHelper;
+import com.example.despesasctrl.data.Despesa;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

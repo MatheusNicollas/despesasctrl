@@ -1,4 +1,4 @@
-package com.example.economias.activity;
+package com.example.despesasctrl.activity;
 
 import static android.text.TextUtils.isEmpty;
 
@@ -18,11 +18,11 @@ import android.widget.Toast;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.economias.R;
-import com.example.economias.adapter.DespesaAdapter;
-import com.example.economias.data.DatabaseHelper;
-import com.example.economias.data.Despesa;
-import com.example.economias.utils.Utils;
+import com.example.despesasctrl.R;
+import com.example.despesasctrl.adapter.DespesaAdapter;
+import com.example.despesasctrl.data.DatabaseHelper;
+import com.example.despesasctrl.data.Despesa;
+import com.example.despesasctrl.utils.Utils;
 
 import java.text.NumberFormat;
 import java.time.LocalDate;
