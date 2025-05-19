@@ -12,6 +12,7 @@ import com.example.despesasctrl.R;
 import com.example.despesasctrl.adapter.DespesaAdapter;
 import com.example.despesasctrl.data.DatabaseHelper;
 import com.example.despesasctrl.data.Despesa;
+import com.example.despesasctrl.utils.Utils;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -67,17 +68,16 @@ public class DetalhesCategoriaActivity extends AppCompatActivity {
         int ano = Integer.parseInt(partes[0]);
         int mes = Integer.parseInt(partes[1]);
 
-        atualizarTituloResumo(mes, ano, categoriaAtual);
+        atualizarTituloResumo(dataInicio, dataFim, categoriaAtual);
         carregarDespesas();
     }
 
-    private void atualizarTituloResumo(int mes, int ano, String categoria) {
-        Calendar tempCalendario = Calendar.getInstance();
-        tempCalendario.set(Calendar.MONTH, mes - 1);
-        tempCalendario.set(Calendar.YEAR, ano);
+    private void atualizarTituloResumo(String dataInicio, String dataFim, String categoria) {
 
-        String nomeMes = new SimpleDateFormat("MMMM", Locale.getDefault()).format(tempCalendario.getTime());
-        String tituloResumo = String.format("%s em %s de %04d", categoria, nomeMes, ano);
+        String dataInicioFormatada = Utils.formatarDataParaExibicao(dataInicio);
+        String dataFimFormatada = Utils.formatarDataParaExibicao(dataFim);
+
+        String tituloResumo = String.format("Gastos com %s de %s a %s", categoria, dataInicioFormatada, dataFimFormatada);
 
         textCategoria.setText(tituloResumo);
     }
